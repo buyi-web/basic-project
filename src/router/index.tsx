@@ -4,7 +4,7 @@ import { lazyLoad } from './LazyLoad';
 
 const router = [
     {
-        path: '/home',
+        path: '/',
         element: lazyLoad(React.lazy(() => import('@/pages/home'))),
     },
     {
