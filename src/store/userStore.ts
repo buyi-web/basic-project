@@ -1,4 +1,3 @@
-import { User } from '@/types/user/user';
 import { create } from 'zustand';
 
 type State = {

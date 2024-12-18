@@ -1,12 +1,12 @@
 
-export enum ActionEnum {
+export enum ActionType {
     Create = 'create',
     Update = 'update',
     Delete = 'delete',
     View = 'view',
 }
 
-export enum ActionEnumText {
+export enum ActionTypeText {
     Create = '创建',
     Update = '修改',
     Delete = '删除',

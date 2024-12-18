@@ -62,6 +62,7 @@ axiosInstance.interceptors.response.use(
   },
 );
 
+
 class Request {
   private request<T = any>(method: string, url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
     return axiosInstance({
@@ -78,11 +79,9 @@ class Request {
   post<T = any>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
     return this.request('post', url, params, config);
   }
-
   put<T = any>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
     return this.request('put', url, params, config);
   }
-
   delete<T = any>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
     return this.request('delete', url, params, config);
   }

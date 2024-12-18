@@ -10,6 +10,10 @@ const router = [
     {
         path: '/login',
         element: lazyLoad(React.lazy(() => import('@/pages/login'))),
+    },
+    {
+        path: 'test',
+        element: lazyLoad(React.lazy(() => import('@/pages/test'))),
     }
 ]
 
